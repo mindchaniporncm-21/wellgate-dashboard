@@ -1,0 +1,26 @@
+/* Wellgate Dashboard — Base Styles */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Sarabun', 'IBM Plex Sans Thai', system-ui, sans-serif;
+  background: #f3f4f6;
+}
+#root { min-height: 100vh; }
+table { font-variant-numeric: tabular-nums; }
+
+/* Loading spinner */
+.boot {
+  padding: 60px;
+  text-align: center;
+  color: #6b7280;
+  font-family: 'Sarabun', system-ui;
+}
+.boot .sp {
+  width: 34px; height: 34px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #0f766e;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
